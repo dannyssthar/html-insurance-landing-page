@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+}
+.view-plans {
+  border: 2px solid;
+  padding: 0rem 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.snap{
+  margin-top: 1rem;
+}
+li:hover {
+  color: hsl(0, 0%, 98%);
+}
+header {
+  position: relative;
+  height: 90vh;
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+}
+.container1 {
+  padding-top: 5rem;
+}
+h1 {
+  padding-top: 3rem;
+  font-size: 70px;
+  margin-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
+  z-index: 7;
+  position: relative;
+}
+.right {
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  top: 0;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+.line {
+  width: 90px;
+  height: 2px;
+  background-color: hsl(0, 0%, 98%);
+}
+.container2 {
+  margin-top: 17rem;
+  margin-bottom: 7rem;
+}
+.container2 .line {
+  background-color: hsl(256, 26%, 20%);
+}
+.container2 h2 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 50px;
+}
+h3 {
+  margin: 2rem 0;
+  font-family: "DM Serif Display", serif;
+}
+.container3 {
+  padding: 3rem;
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  width: 80%;
+}
+.find {
+  font-size: 50px;
+}
+button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+.view, button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(270, 9%, 17%);
+}
+footer {
+  margin-top: 6rem;
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+}
+.footbg {
+  position: absolute;
+  left: -10%;
+}
+.foot1 {
+  border-bottom: 2px solid;
+  padding: 2rem 0;
+}
+.footlinks {
+  flex-direction: column;
+}
+.foot2 p {
+  margin-top: 2rem;
+}
+.social {
+  padding-left: 0.5rem;
+}
+h2 {
+  font-family: "DM Serif Display", serif;
+}
+.ham {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+.navmobile {
+  display: none;
+}
+.desktop{
+  margin-left: 1rem;
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .ham {
+    display: block;
+    cursor: pointer;
+  }
+  .desktop {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: relative;
+   object-fit: cover;
+    width: 500px;
+    z-index: 5;
+  }
+  .container1 {
+    text-align: center;
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .right {
+    position: absolute;
+    width: 40%;
+    left: 70%;
+    top: 80%;
+  }
+  header {
+    overflow: hidden;
+    height: 100%;
+  }
+  .find {
+    font-size: 30px;
+  }
+  footer {
+    overflow: hidden;
+  }
+  br {
+    display: none;
+  }
+  .left {
+    position: absolute;
+    left: 0;
+    top: -40%;
+    z-index: 4;
+  }
+  .container2 h2 {
+    text-align: center;
+  }
+  .container2 {
+    margin-top: 4rem;
+  }
+  .container3 {
+    text-align: center;
+  }
+  .howbtn {
+    margin-top: 2em;
+  }
+  .navmobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    background-color: hsl(256, 26%, 20%);
+    height: 100vh;
+    overflow: hidden;
+  }
+  .navmobile li {
+    list-style: none;
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+  .navmobile ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+  }
+  .navmobile a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+  }
+  .navheader {
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+    justify-content: space-between;
+  }
+  .navbg {
+    position: absolute;
+    top: 70%;
+  }
+  .close{
+    cursor: pointer;
+  }
+}
